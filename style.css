@@ -1,0 +1,128 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+--opensans:'Open Sans', sans-serif;;
+--poppins: 'Poppins', sans-serif;
+}
+/* font */
+.font-700{
+    font-family: var(--opensans);
+    font-weight: 700;
+}
+.font-400{
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 18px;
+}
+.font-600{
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+/* background color */
+.bg-pink{
+    background-color: var(--Pink);
+}
+.bg-blue{
+    background-color: var(--VeryDarkCyan);
+}
+/* text color */
+.text-GrayishBlue{
+    color: var(--GrayishBlue);
+}
+/* buttons */
+.btn_style1{
+    background-color: white;
+    border-radius: 30px;
+    padding: 0px 40px;
+    box-shadow: 2px 4px 12px black;
+}
+.btn_style2{
+    background-color: var(--Pink);
+    border-radius: 30px;
+    padding: 10px 60px;
+    font-family: var(--poppins);
+    color: white;
+    border: 1px solid var(--Pink);
+}
+.btn_style2:hover{
+    background-color:hsl(322, 95%, 62%);
+    font-family: var(--poppins);
+    border: 1px solid var(--Pink);
+}
+.btn_style3{
+    background-color: var(--Pink);
+    border-radius: 30px;
+    padding: 15px 80px;
+    font-family: var(--poppins);
+    color: white;
+    border: 1px solid var(--Pink);
+}
+.btn_style3:hover{
+    background-color:hsl(322, 95%, 62%);
+    font-family: var(--poppins);
+    border: 1px solid var(--Pink);
+}
+/* section 1 */
+.bg-hero{
+background-image: url(./images/bg-hero-mobile.svg);
+background-color: var(--VeryPaleCyan);
+}
+.bg-hero h1,p{
+    text-align: center;
+}
+/* section2 */
+.button_center{
+text-align: center;
+}
+/* contact_section */
+.contact_section p{
+    text-align: justify;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin-bottom{
+    padding-bottom: 200px;
+}
+/* section3 */
+.img-white img{
+    color: white;
+    background-color: white;
+}
+.white-image {
+    filter: brightness(0) invert(1);
+}
+.center_social{
+    text-align: center;
+}
+.bg-facebook:hover{
+    background-color: #1877F2;
+}
+.bg-twitter:hover{
+    background-color: #1DA1F2;
+}
+.bg-instagram:hover{
+    background:linear-gradient( #833AB4,#E1306C, #FD7E14);
+}
+
+@media screen and (min-width:1200px){
+    /* section 1 */
+.bg-hero{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-color: var(--VeryPaleCyan);
+    }
+    .bg-hero h1,p{
+        text-align:left;
+    }
+    .contact_section p{
+        text-align: left;
+    }
+}
